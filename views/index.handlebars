@@ -1,1 +1,12 @@
 <h1>Burger-Eater App!</h1>
+
+<form action="/burgers/create" method="POST">
+<input type="text" name="burger_name">
+<input type="submit" name="devour!">
+</form>
+
+{{#each burgers}}
+    {{this.burger_name}}
+    <hr>
+    <br>
+{{/each}}
